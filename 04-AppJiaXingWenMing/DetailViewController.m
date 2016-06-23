@@ -8,7 +8,7 @@
 
 #import "DetailViewController.h"
 #import "DetailNews.h"
-@interface DetailViewController ()
+@interface DetailViewController ()<UIWebViewDelegate>
 @property(nonatomic,strong)NSMutableArray<DetailNews *> *newsArray;
 @end
 
@@ -22,11 +22,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"新闻详情";
-   [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(print:) name:@"获取新闻详情" object:nil];
+    [self registeredNSNotificationCenter];
+}
+#pragma mark 注册通知及调用数据网络请求方法
+-(void)registeredNSNotificationCenter{
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(print:) name:@"获取新闻详情" object:nil];
     [DetailNews getDetailDataWithdict:_dict];
 }
+#pragma mark 通知的回调方法
 -(void)print:(NSNotification *)notofication{
     self.detailTitle.text=[notofication.object valueForKey:@"title"];
+    [self.contentWedView loadHTMLString:[notofication.object valueForKey:@"content"]baseURL:nil];
+    self.detailTime.text=[notofication.object valueForKey:@"issuestime"];
+    self.detailSourse.text=[notofication.object valueForKey:@"source"];
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"获取新闻详情"   object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
+}
+#pragma mark UIWebViewDelegate
+- (void)webViewDidFinishLoad:(UIWebView *)contentWedView {
+    
     //拦截网页中的图片  并修改图片大小
     [self.contentWedView stringByEvaluatingJavaScriptFromString:
      @"var script = document.createElement('script');"
@@ -47,28 +65,12 @@
     
     //执行一段JavaScript代码
     [self.contentWedView stringByEvaluatingJavaScriptFromString:@"ResizeImages();"];
-    [self.contentWedView loadHTMLString:[notofication.object valueForKey:@"content"]baseURL:nil];
-    self.detailTime.text=[notofication.object valueForKey:@"issuestime"];
-    self.detailSourse.text=[notofication.object valueForKey:@"source"];
-    
+    //获取HTML内容的高度
+    CGFloat height = [[self.contentWedView stringByEvaluatingJavaScriptFromString:@"document.body.offsetHeight"] floatValue];
+    CGRect frame = self.contentWedView.frame;
+    frame.size.height = height+10;
+    self.contentWedView.frame = frame;
+    [self.view layoutIfNeeded];
 }
-
--(void)dealloc{
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"获取新闻详情"   object:nil];
-    [[NSNotificationCenter defaultCenter]removeObserver:self];
-    
-}
-- (void)didReceiveMemoryWarning {
-    // Dispose of any resources that can be recreated.
-}
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

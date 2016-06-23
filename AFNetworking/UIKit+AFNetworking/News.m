@@ -46,7 +46,7 @@
         }
        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"出错了%@",error);
+        NSLog(@"出错了%@",error.localizedDescription);
     }];
 }
 

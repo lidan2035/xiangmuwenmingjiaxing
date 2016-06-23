@@ -16,10 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [MicroCivilization getDataMicroCivilization];
+    //就是一个简单的网络地址请求
+    NSURL *url=[NSURL URLWithString:MicroCivilizationHTTP];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
     
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

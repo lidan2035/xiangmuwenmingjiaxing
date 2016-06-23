@@ -25,4 +25,8 @@
 #define HTTP_getNewsByCategoryId  [HOST stringByAppendingString:@"news/getNewsByCategoryId.do"]
 #define HTTP_addPraise  [HOST stringByAppendingString:@"news/addPraise.do"]
 #define HTTP_NewsDetailById  [HOST stringByAppendingString:@"news/getNewsDetailById.do"]
+#define HTTP_getPsas   [HOST stringByAppendingString:@"pasa/getPsas.do"]
+
+
+#define MicroCivilizationHTTP   @"http://weibo.com/u/2852517300?is_hot=1"
 #endif /* PrefixHeader_pch */

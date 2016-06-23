@@ -26,7 +26,7 @@
             NSLog(@"请求失败%@",responseObject[@"message"]);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"出错啦%@",error);
+        NSLog(@"出错啦%@",error.localizedDescription);
     }];
     
 }

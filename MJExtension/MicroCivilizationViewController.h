@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MicroCivilization.h"
 @interface MicroCivilizationViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 

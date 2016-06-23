@@ -29,7 +29,12 @@
 		179F05B91D11595B00709773 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 179F05B71D11595B00709773 /* ThemeTableViewCell.m */; };
 		179F05BA1D11595B00709773 /* ThemeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179F05B81D11595B00709773 /* ThemeTableViewCell.xib */; };
 		17EC39281D1A613F0086FFE7 /* MicroCivilizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EC39271D1A613F0086FFE7 /* MicroCivilizationViewController.m */; };
-		17EC392E1D1A63530086FFE7 /* MicroCivilization.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EC392D1D1A63530086FFE7 /* MicroCivilization.m */; };
+		17EC39381D1AAFAE0086FFE7 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EC39371D1AAFAE0086FFE7 /* 111.png */; };
+		17EC393A1D1AAFB30086FFE7 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EC39391D1AAFB30086FFE7 /* 222.png */; };
+		17EC393C1D1AAFB70086FFE7 /* 333.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EC393B1D1AAFB70086FFE7 /* 333.png */; };
+		17EC393E1D1AAFBB0086FFE7 /* 444.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EC393D1D1AAFBB0086FFE7 /* 444.png */; };
+		17EC39411D1AB4E90086FFE7 /* PublicInterestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EC39401D1AB4E90086FFE7 /* PublicInterestViewController.m */; };
+		17EC39441D1AB7630086FFE7 /* PublicInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EC39431D1AB7630086FFE7 /* PublicInterest.m */; };
 		47A57B78B907E82B2313FA41 /* libPods-04-AppJiaXingWenMing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 803AC4C0109CE3BB99FB172A /* libPods-04-AppJiaXingWenMing.a */; };
 		8113D3035BC9DF98D608DE44 /* libPods-04-AppJiaXingWenMingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0337220E42E77EC8D133DF0F /* libPods-04-AppJiaXingWenMingTests.a */; };
 		EE135DB3A5E213407CC14A8F /* libPods-04-AppJiaXingWenMingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C5553CA0E959FDC0C67065D /* libPods-04-AppJiaXingWenMingUITests.a */; };
@@ -94,8 +99,14 @@
 		17EAA63B1D0558CF00B3A039 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17EC39261D1A613F0086FFE7 /* MicroCivilizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MicroCivilizationViewController.h; path = MJExtension/MicroCivilizationViewController.h; sourceTree = "<group>"; };
 		17EC39271D1A613F0086FFE7 /* MicroCivilizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MicroCivilizationViewController.m; path = MJExtension/MicroCivilizationViewController.m; sourceTree = "<group>"; };
-		17EC392C1D1A63530086FFE7 /* MicroCivilization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroCivilization.h; sourceTree = "<group>"; };
-		17EC392D1D1A63530086FFE7 /* MicroCivilization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroCivilization.m; sourceTree = "<group>"; };
+		17EC39371D1AAFAE0086FFE7 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		17EC39391D1AAFB30086FFE7 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
+		17EC393B1D1AAFB70086FFE7 /* 333.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 333.png; sourceTree = "<group>"; };
+		17EC393D1D1AAFBB0086FFE7 /* 444.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 444.png; sourceTree = "<group>"; };
+		17EC393F1D1AB4E90086FFE7 /* PublicInterestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicInterestViewController.h; sourceTree = "<group>"; };
+		17EC39401D1AB4E90086FFE7 /* PublicInterestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicInterestViewController.m; sourceTree = "<group>"; };
+		17EC39421D1AB7630086FFE7 /* PublicInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicInterest.h; sourceTree = "<group>"; };
+		17EC39431D1AB7630086FFE7 /* PublicInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicInterest.m; sourceTree = "<group>"; };
 		1941ED4B9DE143AAEE1D895B /* Pods-04-AppJiaXingWenMingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04-AppJiaXingWenMingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-04-AppJiaXingWenMingTests/Pods-04-AppJiaXingWenMingTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B7E56FD53D6E8F6811A18A9 /* Pods-04-AppJiaXingWenMingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04-AppJiaXingWenMingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-04-AppJiaXingWenMingUITests/Pods-04-AppJiaXingWenMingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C5553CA0E959FDC0C67065D /* libPods-04-AppJiaXingWenMingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-04-AppJiaXingWenMingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +153,8 @@
 				171517F21D082131001B1873 /* LunboPicture.m */,
 				177A778F1D18003F0047672D /* DetailNews.h */,
 				177A77901D18003F0047672D /* DetailNews.m */,
-				17EC392C1D1A63530086FFE7 /* MicroCivilization.h */,
-				17EC392D1D1A63530086FFE7 /* MicroCivilization.m */,
+				17EC39421D1AB7630086FFE7 /* PublicInterest.h */,
+				17EC39431D1AB7630086FFE7 /* PublicInterest.m */,
 				1728B91B1D019A370003D0CA /* _4_AppJiaXingWenMing.xcdatamodeld */,
 			);
 			name = Model;
@@ -168,6 +179,8 @@
 				17329CCE1D06CCE2009A2274 /* DetailViewController.m */,
 				17EC39261D1A613F0086FFE7 /* MicroCivilizationViewController.h */,
 				17EC39271D1A613F0086FFE7 /* MicroCivilizationViewController.m */,
+				17EC393F1D1AB4E90086FFE7 /* PublicInterestViewController.h */,
+				17EC39401D1AB4E90086FFE7 /* PublicInterestViewController.m */,
 			);
 			name = Controlls;
 			sourceTree = "<group>";
@@ -257,7 +270,11 @@
 			isa = PBXGroup;
 			children = (
 				1728B9821D01B5FC0003D0CA /* regist.jpg */,
+				17EC39371D1AAFAE0086FFE7 /* 111.png */,
 				1728B9831D01B5FC0003D0CA /* registOne.jpg */,
+				17EC393B1D1AAFB70086FFE7 /* 333.png */,
+				17EC39391D1AAFB30086FFE7 /* 222.png */,
+				17EC393D1D1AAFBB0086FFE7 /* 444.png */,
 				1728B9841D01B5FC0003D0CA /* registTwo.jpg */,
 			);
 			path = "图库";
@@ -397,11 +414,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EC39381D1AAFAE0086FFE7 /* 111.png in Resources */,
 				1728B9871D01B5FC0003D0CA /* registTwo.jpg in Resources */,
+				17EC393C1D1AAFB70086FFE7 /* 333.png in Resources */,
 				179F05BA1D11595B00709773 /* ThemeTableViewCell.xib in Resources */,
 				1728B9221D019A370003D0CA /* LaunchScreen.storyboard in Resources */,
 				1728B91F1D019A370003D0CA /* Assets.xcassets in Resources */,
+				17EC393E1D1AAFBB0086FFE7 /* 444.png in Resources */,
 				1728B9801D01A4140003D0CA /* NewsTableViewCell.xib in Resources */,
+				17EC393A1D1AAFB30086FFE7 /* 222.png in Resources */,
 				1728B91A1D019A370003D0CA /* Main.storyboard in Resources */,
 				1728B9861D01B5FC0003D0CA /* registOne.jpg in Resources */,
 				1728B9851D01B5FC0003D0CA /* regist.jpg in Resources */,
@@ -558,13 +579,14 @@
 				1728B91D1D019A370003D0CA /* _4_AppJiaXingWenMing.xcdatamodeld in Sources */,
 				171517F31D082131001B1873 /* LunboPicture.m in Sources */,
 				17329CCF1D06CCE2009A2274 /* DetailViewController.m in Sources */,
+				17EC39441D1AB7630086FFE7 /* PublicInterest.m in Sources */,
 				1728B97F1D01A4140003D0CA /* NewsTableViewCell.m in Sources */,
 				1728B9141D019A370003D0CA /* AppDelegate.m in Sources */,
 				171517CB1D07B727001B1873 /* News.m in Sources */,
+				17EC39411D1AB4E90086FFE7 /* PublicInterestViewController.m in Sources */,
 				179F05B91D11595B00709773 /* ThemeTableViewCell.m in Sources */,
 				1728B9111D019A370003D0CA /* main.m in Sources */,
 				179F059A1D112EB000709773 /* CivilizationBroadcastViewController.m in Sources */,
-				17EC392E1D1A63530086FFE7 /* MicroCivilization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

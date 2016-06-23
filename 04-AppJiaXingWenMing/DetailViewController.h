@@ -14,5 +14,4 @@
 @property (strong, nonatomic) IBOutlet UIWebView *contentWedView;
 @property (strong, nonatomic) IBOutlet UILabel *detailTime;
 @property (strong, nonatomic) IBOutlet UILabel *detailSourse;
-
 @end
